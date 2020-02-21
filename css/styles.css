@@ -1,0 +1,476 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+
+/* HEADER */
+
+ul {
+    list-style: none;
+}
+
+header {
+    background-color: #4842a2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 2%;
+    height: auto;
+    width: auto;
+}
+
+.nav {
+    float: right;
+    padding: 2%;
+    color: white;
+    font-weight: bold;
+
+}
+
+.nav>a {
+    text-decoration: none;
+    color: white;
+    transition: ease-in color 300ms;
+}
+
+.nav>a:hover {
+    color: #31c9c1;
+}
+
+nav {
+    width: 60%;
+    margin-right: 2%;
+}
+
+/* BANNER */
+
+.section1 {
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 4%;
+    padding-bottom: 13%;
+    background-color: #4842a2;
+    color: white;
+    line-height: 28px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.section1>article>h1 {
+    font-size: 81px;
+    line-height: 80px;
+}
+
+.section1>article>h2 {
+    font-size: 42px;
+    line-height: 50px;
+}
+
+.section1>img {
+    width: 50%;
+    height: min-content;
+}
+
+.section1>article {
+    width: 50%;
+}
+
+.section1-botones {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.section1-botones>a {
+    text-decoration: none;
+    color: white;
+    padding: 3%;
+    border-style: solid;
+    width: 30%;
+    text-align: center;
+    transition: ease-in background-color 300ms;
+}
+
+.section1-botones>a:hover {
+    background-color: #31c9c1;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 4%;
+    padding-bottom: 5%;
+}
+
+.card {
+    justify-content: center;
+    width: 25%;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 15px;
+    border-color: #31c9c1;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    line-height: 2em;
+}
+
+.card>h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* REJILLA */
+
+.container-rejilla {
+    background-color: #dddddd;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 6%;
+}
+
+.container-rejilla>h1 {
+    text-decoration: #31c9c1 underline;
+    padding: 1%;
+    font-weight: bolder;
+}
+
+.rejilla {
+    background-color: white;
+    width: 60%;
+    display: grid;
+    margin-left: 20%;
+    padding-bottom: 3%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 22% 22% 22% 14%;
+    grid-template-areas: "fila1-1 fila1-2 fila1-3"
+        "fila2-1 fila2-2 fila2-3"
+        "fila3-1 fila3-2 fila3-3"
+        "fila4-1 fila4-2 fila4-3";
+    grid-gap: 1% 1%;
+    justify-content: stretch;
+    align-content: stretch;
+}
+
+.rejilla>div>h3 {
+    font-weight: bold;
+    color: white;
+    background-color: #252527;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    transition: ease-in background-color 300ms;
+}
+
+.rejilla>div>h3:hover {
+    background-color: #31c9c1;
+}
+
+.rejilla>div {
+    margin: 4%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fila4-2>a {
+    text-decoration: none;
+    color: #31c9c1;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-style: solid;
+    width: 30%;
+    text-align: center;
+    transition: ease-in background-color 300ms;
+    font-weight: bold;
+    align-self: center;
+}
+
+.fila4-2>a:hover {
+    color: black;
+    border-color: #31c9c1;
+    background-color: #31c9c1;
+}
+
+/* JUMBOTRON */
+
+.jumbo {
+    background-color: #4842a2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+}
+
+.jumbo>div {
+    width: 50%;
+}
+
+.jumbo>div>h1,
+h2,
+a {
+    font-family: 'Dosis', sans-serif;
+}
+
+.jumbo>div>h1 {
+    font-size: 81px;
+}
+
+.jumbo>div>h2 {
+    font-size: 42px;
+}
+
+.jumbo>div>a {
+    text-decoration: none;
+    color: white;
+    padding: 3% 8% 3% 8%;
+    width: 30%;
+    text-align: center;
+    transition: ease-in background-color 300ms;
+    background-color: #31c9c1;
+    margin: 2%;
+}
+
+.jumbo>div>a:hover {
+    background-color: #000000;
+}
+
+/* QUOTES */
+
+.quotes {
+    padding: 3% 0% 3% 0%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.quotes>h1 {
+    text-decoration: #31c9c1 underline;
+    padding: 2%;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.quotes>article>h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.quotes>article {
+    font-family: 'Poppins', sans-serif;
+    width: 40%;
+    padding-left: 30%;
+    line-height: 1.7em;
+}
+
+/* CONTACTO */
+
+.contacto {
+    background-color: #4842a2;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.contacto>h1 {
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-flow: column;
+    padding: 3%;
+    margin-left: 28%;
+    margin-right: 28%;
+    border: white solid 2px;
+    justify-content: center;
+}
+
+.form>input,
+textarea {
+    background-color: #4842a2;
+    color: white;
+    border: white solid 2px;
+    padding: 2%;
+    margin: 2%;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+::-moz-placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.button-form {
+    border: none;
+    border-radius: 40px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 35%;
+    margin-right: 35%;
+    font-size: 22px;
+    background-color: #31c9c1;
+    color: white;
+    transition: ease-in background-color 300ms;
+    margin-top: 5%;
+}
+
+.button-form:hover {
+    background-color: black;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #252527;
+    color: white;
+    justify-content: center;
+}
+
+.primera {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding: 5%;
+}
+
+.primera>div {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+hr {
+    width: 60%;
+    color: white;
+}
+
+footer>div>div>h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+footer>div>div>#enlaces {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer>div>div>#enlaces2 {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.fa {
+    font-size: 30px;
+    color: #252527;
+    background-color: white;
+    transition: ease-in background-color 300ms;
+}
+
+.fa:hover {
+    background-color: #31c9c1;
+}
+
+
+.social_icon {
+    display: flex;
+}
+
+.social_icon>.social {
+    width: 100%;
+    padding: 20%;
+    margin: 3%;
+    background-color: white;
+    transition: ease-in background-color 300ms;
+    border-radius: 100%;
+}
+
+.facebook {
+    width: 100%;
+    margin: 3%;
+    background-color: white;
+    transition: ease-in background-color 300ms;
+    border-radius: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.social_icon>a:hover{
+    background-color: #31c9c1;
+}
+
+.segunda {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.copyright>p>a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+
+
+.button-news {
+    border: none;
+    border-radius: 10px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 22px;
+    background-color: #31c9c1;
+    color: white;
+    transition: ease-in background-color 300ms;
+    margin-top: 5%;
+}
+
+.button-news:hover {
+    background-color: black;
+}
+
+.input-news {
+    border-radius: 10px;
+    border: none;
+    padding: 3%;
+}
+
+.about-us {
+    margin-left: 10%;
+}
